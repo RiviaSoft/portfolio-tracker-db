@@ -6,7 +6,7 @@ USE portfolio_tracker_db;
 CREATE TABLE `recent_buy_operations` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `user_id` int(10) NOT NULL,
-  `coin_symbol` varchar(10) NOT NULL,
+  `coin_symbol` varchar(20) NOT NULL,
   `coin_amount` double NOT NULL,
   `buy_cost` double NOT NULL,
   PRIMARY KEY (id)
@@ -15,7 +15,7 @@ CREATE TABLE `recent_buy_operations` (
 CREATE TABLE `archived_operations` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `user_id` int(10) NOT NULL,
-  `coin_symbol` varchar(10) NOT NULL,
+  `coin_symbol` varchar(20) NOT NULL,
   `coin_amount` double NOT NULL,
   `buy_cost` double NOT NULL,
   `sell_cost` double NOT NULL,

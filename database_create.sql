@@ -43,3 +43,18 @@ CREATE TABLE `wallet_operations` (
   `operation_id` int(10) NOT NULL,
   PRIMARY KEY (id)
 ) CHARSET=utf8mb4;
+
+INSERT INTO users (name, email, password_hash)
+VALUES ('Ahmet','ahmet123@gmail.com', 'et35895eo8,tjs!)ksadklm@3i__akflj');
+
+INSERT INTO recent_buy_operations (user_id, coin_symbol, coin_amount, buy_cost)
+VALUES (2,'BTCUSD', 4, 30000.23);
+
+INSERT INTO archived_operations (user_id, coin_symbol, coin_amount, buy_cost, sell_cost)
+VALUES (2,'BTCUSD', 4, 30000.23, 50000.21);
+
+INSERT INTO wallets (user_id, name)
+VALUES (2,'Kısa vade');
+
+INSERT INTO wallet_operations (wallet_id, operation_id)
+VALUES (2, 4);
